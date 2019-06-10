@@ -18,14 +18,14 @@ def Highly_divisible_triangular_number(what):
         for x in primelist:
             factor = True
             while factor == True:
-                if number % x != 0:
+                if z % x != 0:
                     factor = False
                     break
                 Factors.append(x)
-                number = int(number/x)
-            if x > number+ 1:
+                z = int(z/x)
+            if x > z+ 1:
                 break
-        for y in range(103, number + 1, 2):
+        for y in range(103, z + 1, 2):
             prime = True
             for x in primelist2:
                 if y % x == 0:
@@ -37,16 +37,16 @@ def Highly_divisible_triangular_number(what):
                 primelist2.append(y)
                 factor2 = True
                 while factor2 == True:
-                    if number % y != 0:
+                    if z % y != 0:
                         factor2 = False
                         break
                     Factors.append(y)
-                    number = number / y
-                    if y > number + 1:
+                    z = number / y
+                    if y > z + 1:
                         break
-                if y > number + 1:
+                if y > z + 1:
                     break
-            if y > number + 1:
+            if y > z+ 1:
                 break
 
 primefactoring(int(number))

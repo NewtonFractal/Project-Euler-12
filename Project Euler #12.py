@@ -11,3 +11,17 @@ def triangle_number(w):
     print(sums)
 
 triangle_number(12)
+
+def triangle_divisors(LCM):
+    for x in sums:
+        for y in primelist:
+            while x > y:
+                y = y*x
+                if x > y:
+                    LCM = LCM *x
+                else:
+                    continue
+                
+
+                
+triangle_divisors(1)

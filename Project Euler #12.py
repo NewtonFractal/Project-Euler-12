@@ -7,7 +7,7 @@ divisors = []
 
 
 def triangle_number(w):
-    for y in range(2, w + 1):
+    for y in range(100, w + 1):
         sums.append(int(((y + 1) * y) / 2))
 
 

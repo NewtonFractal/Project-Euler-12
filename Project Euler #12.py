@@ -11,7 +11,7 @@ def triangle_number(w):
         sums.append(int(((y + 1) * y) / 2))
 
 
-triangle_number(2)
+triangle_number(12500)
 
 def Highly_divisible_triangular_number(number):
     for x in primelist:

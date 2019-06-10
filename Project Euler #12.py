@@ -2,6 +2,7 @@ import time
 import math
 start = time.time()
 sums = [1]
+Factors = []
 primelist = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101]
 primelist2 = [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101]
 
@@ -15,7 +16,7 @@ triangle_number(50)
 end = time.time()
 print(end - start)
 
-def Highly_divisible_triangular_number(what):
+def Highly_divisible_triangular_number():
     for z in sums:
         for x in primelist:
             factor = True
@@ -51,7 +52,7 @@ def Highly_divisible_triangular_number(what):
             if y > z+ 1:
                 break
 
-primefactoring(int(number))
+Highly_divisible_triangular_number()
 print(Factors)
 end = time.time()
 print(end - start)

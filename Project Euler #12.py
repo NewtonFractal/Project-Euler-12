@@ -8,21 +8,19 @@ def triangle_number(w):
         sums.append(int(((y+1)*y)/2))
     print(sums)
 
-triangle_number(10000)
+triangle_number(50)
 
 end = time.time()
 print(end - start)
 
-def triangle_divisors(LCM):
+def triangle_divisors(count):
     for x in sums:
         for y in primelist:
+            if y > x:
+                break
             while x > y:
                 y = y*x
-                if x > y:
-                    LCM = LCM *x
-                else:
-                    continue
-                
+                if x < y:
+                    count += 1
 
-                
-triangle_divisors(1)
+triangle_divisors(0)

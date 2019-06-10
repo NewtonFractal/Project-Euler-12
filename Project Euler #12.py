@@ -13,14 +13,42 @@ triangle_number(50)
 end = time.time()
 print(end - start)
 
-def triangle_divisors(count):
-    for x in sums:
-        for y in primelist:
-            if y > x:
+def primefactoring(number):
+    for x in primelist:
+        factor = True
+        while factor == True:
+            if number % x != 0:
+                factor = False
                 break
-            while x > y:
-                y = y*x
-                if x < y:
-                    count += 1
+            Factors.append(x)
+            number = int(number/x)
+        if x > number+ 1:
+            break
+    for y in range(103, number + 1, 2):
+        prime = True
+        for x in primelist2:
+            if y % x == 0:
+                prime = False
+                break
+            if x > math.sqrt(y):
+                break
+        if prime == True:
+            primelist2.append(y)
+            factor2 = True
+            while factor2 == True:
+                if number % y != 0:
+                    factor2 = False
+                    break
+                Factors.append(y)
+                number = number / y
+                if y > number + 1:
+                    break
+            if y > number + 1:
+                break
+        if y > number + 1:
+            break
 
-triangle_divisors(0)
+primefactoring(int(number))
+print(Factors)
+end = time.time()
+print(end - start)

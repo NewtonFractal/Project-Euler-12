@@ -6,8 +6,6 @@ Factors = []
 start = time.time()
 sums = []
 
-
-
 def triangle_number(w):
     for y in range(1, w + 1):
         sums.append(int(((y + 1) * y) / 2))

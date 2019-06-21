@@ -22,7 +22,7 @@ def Triangle_number_generator(lower_bound,upper_bound):
         Highly_divisible_triangular_number((x * (x + 1)) / 2)
 
 def lower_bound_finder(sum):
-    Triangle_number_generator(int(((math.sqrt(8*sum+1)-1)/2)),34673462344326)
+    Triangle_number_generator(int(((math.sqrt(8*sum+1)-1)/2)),34673462)
 
 lower_bound_finder(2*3*5*7*11*13*17*19*5)
 

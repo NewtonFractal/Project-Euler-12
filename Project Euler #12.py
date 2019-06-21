@@ -24,7 +24,7 @@ def Triangle_number_generator(lower_bound,upper_bound):
 def lower_bound_finder(sum):
     Triangle_number_generator(int(((math.sqrt(8*sum+1)-1)/2)),34673462)
 
-lower_bound_finder(2*3*5*7*11*13*17*19*5)
+lower_bound_finder((2**4)*(3**4)*(5**4)*(7)*(11))
 
 end = time.time()
 print(end - start)

@@ -10,10 +10,10 @@ def Highly_divisible_triangular_number(number):
         if number % x == 0:
             factors.append(number / x)
             factors.append(x)
-        if len(factors) > 500:
-            Answer.append(number)
-            print(number)
-            break
+    if len(factors) > 500:
+        Answer.append(number)
+        print(number)
+
 
 def Triangle_number_generator(lower_bound,upper_bound):
     for x in range(lower_bound, upper_bound):

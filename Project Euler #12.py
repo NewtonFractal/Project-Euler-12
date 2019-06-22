@@ -1,6 +1,5 @@
 import math
 import time
-
 Answer =[]
 start = time.time()
 
@@ -13,7 +12,6 @@ def Highly_divisible_triangular_number(number):
     if len(factors) > 500:
         Answer.append(number)
         print(number)
-
 
 def Triangle_number_generator(lower_bound,upper_bound):
     for x in range(lower_bound, upper_bound):

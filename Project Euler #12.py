@@ -5,8 +5,8 @@ Answer =[]
 start = time.time()
 
 def Highly_divisible_triangular_number(number):
-    factors = []
-    for x in range(1, int(math.sqrt(number)+1)):
+    factors = [1]
+    for x in range(2, int(math.sqrt(number)+1)):
         if number % x == 0:
             factors.append(number / x)
             factors.append(x)

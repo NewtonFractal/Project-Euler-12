@@ -17,7 +17,7 @@ def Triangle_number_generator(lower_bound,upper_bound):
     for x in range(lower_bound, upper_bound):
         if len(Answer) == 1:
             break
-        Highly_divisible_triangular_number((x *(x+1))/2)
+        Highly_divisible_triangular_number((x*(x+1))/2)
 
 def lower_bound_finder(sum):
     Triangle_number_generator(int(((math.sqrt(8*sum+1)-1)/2)),34673462)
